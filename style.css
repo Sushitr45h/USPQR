@@ -225,6 +225,8 @@ body {
   width: 100%;
   justify-content: center;
   align-items: flex-start;
+  transform: translateY(60px);
+  margin-bottom: 40px;
 }
 
 .candidate-card {
