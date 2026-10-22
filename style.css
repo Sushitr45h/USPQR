@@ -403,17 +403,23 @@ html, body {
 .portal-previews-wrap {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin: 18px 0 24px;
+  gap: 14px;
+  margin: 18px 0 28px;
   align-items: center;
+  width: 100%;
 }
 
 .portal-preview-img {
   width: 100%;
-  max-width: 320px;
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(10, 45, 80, 0.2);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
   display: block;
+  transition: transform 0.2s ease;
+}
+
+.portal-preview-img:hover {
+  transform: scale(1.02);
 }
 
 /* Credentials content sections */
