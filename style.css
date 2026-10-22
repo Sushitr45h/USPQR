@@ -181,9 +181,8 @@ body {
 }
 
 .brand-logo {
-  width: 58px;
+  width: 60px;
   height: auto;
-  mix-blend-mode: multiply;
   display: block;
 }
 
