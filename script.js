@@ -68,7 +68,10 @@ let qrGenerated = false;
 function generateQR() {
   if (qrGenerated) return;
 
-  const url = window.location.href.split('?')[0].split('#')[0];
+  const liveUrl = 'https://Sushitr45h.github.io/USPQR';
+  const url = window.location.hostname === 'localhost' || window.location.protocol === 'file:'
+    ? liveUrl
+    : window.location.href.split('?')[0].split('#')[0];
   const displayEl = document.getElementById('qr-url-display');
   const qrEl = document.getElementById('qrcode');
 
