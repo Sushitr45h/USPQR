@@ -2,435 +2,424 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <meta name="description" content="United Students Party - WMSU USC 12th Congress Presidential and Vice Presidential Candidates: Sadriemar Sali and Paul Zaragoza. Unity. Service. Performance." />
-  <meta property="og:title" content="USP WMSU | Sali & Zaragoza 2026" />
-  <meta property="og:description" content="Meet the USP Presidential and Vice Presidential Candidates for the WMSU USC 12th Congress." />
-  <meta name="theme-color" content="#5ab4e0" />
-  <title>USP WMSU | Sali & Zaragoza 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#13537a" />
+  <title>USP WMSU | Sali &amp; Zaragoza 2026</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <a class="navbar-brand" href="#" onclick="showSection('home'); return false;">
-      <img class="navbar-logo" src="usp-logo.jpg" alt="USP Logo" />
-      <div class="navbar-title">
-        United Students Party
-        <span>WMSU USC 12th Congress</span>
+<div class="app-viewport figma-bg">
+
+  <!-- =========================================================
+       SCREEN 1: HOME / CANDIDATES LANDING
+       ========================================================= -->
+  <section id="home" class="screen screen-fixed active">
+    <div class="home-header">
+      <div class="brand-logo-wrap">
+        <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
       </div>
-    </a>
-    <button class="hamburger" id="hamburgerBtn" aria-label="Menu" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- ===== MOBILE MENU ===== -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#" onclick="showSection('home'); return false;" id="nav-home">🏠 Home</a>
-    <a href="#" onclick="showSection('sadriemar'); return false;" id="nav-sadriemar">👤 Sadriemar Sali — President</a>
-    <a href="#" onclick="showSection('paul'); return false;" id="nav-paul">👤 Paul Zaragoza — Vice President</a>
-    <a href="#" onclick="showSection('platform'); return false;" id="nav-platform">📋 B.U.G.H.A.O. Platform</a>
-    <a href="#" onclick="showSection('qr'); return false;" id="nav-qr">📱 Scan QR Code</a>
-  </div>
-
-  <!-- ===== PAGE WRAPPER ===== -->
-  <div class="page-wrapper">
-
-    <!-- ============================== -->
-    <!-- SECTION: HOME / HERO           -->
-    <!-- ============================== -->
-    <section id="home" class="section active">
-      <div class="hero-logo-wrap">
-        <img class="hero-logo" src="usp-logo.jpg" alt="United Students Party Logo" />
-      </div>
-
-      <p class="hero-tagline-top">WMSU USC · 12th Congress</p>
-
-      <h1 class="hero-title">
-        Meet the <em>Presidential</em> and <em>Vice Presidential</em> Candidate
+      <h1 class="home-title">
+        Meet<br />
+        the Presidential and Vice Presidential<br />
+        Candidate
       </h1>
+    </div>
 
-      <!-- Candidate Cards -->
-      <div class="candidates-grid">
-        <a class="candidate-card" href="#" onclick="showSection('sadriemar'); return false;" id="card-sadriemar">
-          <div class="candidate-photo-wrap">
-            <img class="candidate-photo" src="sadriemar-filing.jpg" alt="Sadriemar Sali" loading="lazy" />
-          </div>
-          <div class="candidate-info">
-            <div class="candidate-name">Sadriemar Sali</div>
-            <div class="candidate-pos">President</div>
-            <div class="view-btn">View Profile</div>
-          </div>
-        </a>
-
-        <a class="candidate-card" href="#" onclick="showSection('paul'); return false;" id="card-paul">
-          <div class="candidate-photo-wrap">
-            <img class="candidate-photo" src="paul-photo.jpg" alt="Paul Zaragoza" loading="lazy" />
-          </div>
-          <div class="candidate-info">
-            <div class="candidate-name">Paul Zaragoza</div>
-            <div class="candidate-pos">Vice President</div>
-            <div class="view-btn">View Profile</div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Platform Button -->
-      <a class="platform-btn" href="#" onclick="showSection('platform'); return false;">
-        📋 View B.U.G.H.A.O. Platform
-      </a>
-
-      <!-- QR Button -->
-      <a class="qr-btn" href="#" onclick="showSection('qr'); return false;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18" height="18">
-          <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
-          <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="2" height="2"/>
-          <rect x="18" y="14" width="2" height="2"/><rect x="14" y="18" width="2" height="2"/>
-          <rect x="18" y="18" width="2" height="2"/><rect x="16" y="16" width="2" height="2"/>
-        </svg>
-        Scan / Share QR Code
-      </a>
-
-      <div class="hero-footer-tagline">Unity. Service. Performance.</div>
-    </section>
-
-    <!-- ============================== -->
-    <!-- SECTION: SADRIEMAR SALI        -->
-    <!-- ============================== -->
-    <section id="sadriemar" class="section">
-      <button class="back-btn" onclick="showSection('home')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M19 12H5M12 5l-7 7 7 7"/>
-        </svg>
-        Back
-      </button>
-
-      <div class="profile-header">
-        <div class="profile-photo-wrap">
-          <img class="profile-photo" src="sadriemar-filing.jpg" alt="Sadriemar Sali" />
+    <div class="candidates-row">
+      <!-- Sadriemar Sali Tile -->
+      <div class="candidate-card" onclick="navigateTo('sadriemar-profile')" role="button" tabindex="0">
+        <div class="candidate-photo-box">
+          <img src="sadriemar-photo.png" alt="Sadriemar Sali" />
         </div>
-        <h2 class="profile-name">Sadriemar Sali</h2>
-        <p class="profile-position">President · USP WMSU</p>
+        <div class="candidate-card-name">Sadriemar Sali</div>
+        <div class="candidate-card-role">President</div>
       </div>
 
-      <!-- Authored Bills -->
-      <div class="profile-card">
-        <h3 class="card-heading">Authored Bills and Resolutions</h3>
-        <ul class="card-list">
-          <li>Senate Bill No. 003 ACT TO ESTABLISH EFFECTIVE STUDENT ORGANIZATION ACCOUNTABILITY, PERFORMANCE STANDARD AND ACCOUNTABILITY FOR THE WESTERN MINDANAO STATE UNIVERSITY STUDENT COUNCIL — also known as an Act to Require all College Senators and Councilors to author one bill, and requiring all College Mayor and Vice Mayor to submit semestral accomplishment and financial Report (Still Pending)</li>
-          <li>Senate Resolution No. 006 Resolution Directing the Senate Committee on Budget and Finance, Student Organization, Accountability of Public Officers and Investigation and Ways and Means, to conduct and inquiry in aid of legislation, into Department/Society Organization, Forfeiting the basis of DM fund collection and comprehensively reviewing their financial reports for the first semester of the academic year (2024–2025)</li>
-          <li>Co-Authored Local Government Code: CPADS – CXC</li>
-        </ul>
-      </div>
-
-      <!-- Awards -->
-      <div class="profile-card">
-        <h3 class="card-heading">Awards</h3>
-        <ul class="card-list">
-          <li>WMSU USC Senate 11th Congress Special Award 2023-2024</li>
-          <li>WMSU USC Senate 11th Congress Special Award 2024-2025</li>
-          <li>Volunteer (Senate Resident) WMSU, USC Executive and Legislative Visit to BSU Campus 2024-2025</li>
-        </ul>
-      </div>
-
-      <!-- Seminars -->
-      <div class="profile-card">
-        <h3 class="card-heading">Seminars and Trainings</h3>
-        <ul class="card-list">
-          <li>ESTUDYANTE COUNCIL MEETING TEAM BUILDING: Down the Leaders Road with a Theme: Bridging the Gaps and Unlocking Possibilities Through Camaraderie and Discovery of Potential — Student Club 2025–2026</li>
-          <li>HIWAIDS Prevention Forum titled TAKE THE RIGHT PATH Ill conducted by the Gender Research and Resource Center and Nursing Club 2024</li>
-          <li>SAFE SPACES FOR STUDENT COUNCIL OFFICERS: Unite B They Campaign for Safety of Vulnerable Women with the theme: "UNITED for a VAW-FREE Philippines" Conducted by GRRC And WMSU GAI 2024</li>
-          <li>MAGSLONG: Shaping Through Youth Leadership in Responsive Governance 2024</li>
-        </ul>
-      </div>
-
-      <!-- Education -->
-      <div class="profile-card">
-        <h3 class="card-heading">Educational Background</h3>
-        <ul class="card-list">
-          <li>Bachelor of Public Administration, Western Mindanao State University, Normal Road, Bulawan, Zamboanga City — August 2023 to Current</li>
-          <li>Mahardika Institute of Technology Inc. — Senior High School — With Honors (2021–2024)</li>
-          <li>Taytay-Tawi Local School of Fisheries — Junior High School — With Honors (Tawi-Tawi, Bongao)</li>
-          <li>Salamat Elementary School, Tawi-Tawi, Bongao</li>
-        </ul>
-      </div>
-
-      <!-- Leadership -->
-      <div class="profile-card">
-        <h3 class="card-heading">Leadership Roles</h3>
-        <ul class="card-list">
-          <li>Officer-In-Charge (OIC) Vice President, WMSU-USC (2023)</li>
-          <li>Senate 10th Congress — Senate President, WMSU-USC (2024–2025)</li>
-          <li>Senate 10th Congress Officer-in-Charge Minority Floor Leader, WMSU-USC (2023–2024)</li>
-          <li>Assistant Minority Floor Leader, Senate 10th Congress, WMSU-USC (2023–2024)</li>
-          <li>Chairperson, Senate Committee on Education, WMSU-USC (2023–2024)</li>
-          <li>Chairperson, Senate Committee on Local Government, WMSU-USC (2024–2025)</li>
-          <li>Senator, College Students Council, WMSU+CPADS (2023)</li>
-          <li>Incoming Project Manager, SPAP, WMSU-CPADS (2025)</li>
-          <li>Treasurer, General Union of Talented and Organized Learners Organization (UTOL) (2022–2023)</li>
-          <li>Vice President, Science, Technology, Engineering, and Mathematics Students Association (STEMSA) (2021–2022)</li>
-        </ul>
-      </div>
-
-      <div class="section-footer">
-        <p class="footer-tagline">Unity. Service. Performance.</p>
-        <div class="footer-usp">
-          <img src="usp-logo.jpg" alt="USP" />
-          United Students Party · WMSU
+      <!-- Paul Zaragoza Tile -->
+      <div class="candidate-card" onclick="navigateTo('paul-profile')" role="button" tabindex="0">
+        <div class="candidate-photo-box">
+          <img src="paul-photo.png" alt="Paul Zaragoza" />
         </div>
+        <div class="candidate-card-name">Paul Zaragoza</div>
+        <div class="candidate-card-role">Vice President</div>
       </div>
-    </section>
+    </div>
 
-    <!-- ============================== -->
-    <!-- SECTION: PAUL ZARAGOZA         -->
-    <!-- ============================== -->
-    <section id="paul" class="section">
-      <button class="back-btn" onclick="showSection('home')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M19 12H5M12 5l-7 7 7 7"/>
-        </svg>
-        Back
-      </button>
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
 
-      <div class="profile-header">
-        <div class="profile-photo-wrap">
-          <img class="profile-photo" src="paul-photo.jpg" alt="Paul Zaragoza" />
-        </div>
-        <h2 class="profile-name">Paul Zaragoza</h2>
-        <p class="profile-position">Vice President · USP WMSU</p>
+
+  <!-- =========================================================
+       SCREEN 2: SADRIEMAR SALI - PROFILE
+       ========================================================= -->
+  <section id="sadriemar-profile" class="screen screen-fixed">
+    <button class="nav-back-btn" onclick="navigateTo('home')" aria-label="Go Back">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+    </button>
+
+    <div class="brand-logo-wrap">
+      <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
+    </div>
+
+    <div class="profile-main-content">
+      <div class="profile-avatar-frame">
+        <img src="sadriemar-photo.png" alt="Sadriemar Sali" />
       </div>
+      <h2 class="profile-full-name">Sadriemar Sali</h2>
+      <p class="profile-office-title">President</p>
 
-      <!-- Authored Bills -->
-      <div class="profile-card">
-        <h3 class="card-heading">Authored Bills and Resolutions</h3>
-        <ul class="card-list">
-          <li>Senate Bill No. 001 — A Resolution in behalf of the University Administration to request the University Administration to maintain clear student-campus related protocols emergency</li>
-          <li>Authored the 1st Councilor Bill "An Act Providing Relief Benefits for CCS Student Officers for the Associate in Computer Technology (ACT) Programs and in the College of Computing Studies — thereby ensuring equal treatment and fairness in the CCS-College Student Council"</li>
-          <li>Authored co-filed Governing Criteria for College of Computing Studies – CSC, providing safeguards (on pending)</li>
-          <li>USC Bill: An Act Creating Rules, Guidelines, and Procedures for the Filing of all Forms of Nomination for the WMSU Student Council or USC Election Code (on pending)</li>
-        </ul>
+      <div class="profile-actions-row">
+        <button class="pill-action-btn" onclick="navigateTo('sadriemar-platform')">Platforms</button>
+        <button class="pill-action-btn" onclick="navigateTo('sadriemar-creds')">Credentials</button>
       </div>
+    </div>
 
-      <!-- Awards -->
-      <div class="profile-card">
-        <h3 class="card-heading">Awards</h3>
-        <ul class="card-list">
-          <li>OCC – CSC Certificate of Recognition as ACT Representative 4th term (2023–2024)</li>
-          <li>Philippine Science Information Technology Scholars Certificate of Participation as ACT Representative (2023–2024)</li>
-          <li>Student Developer Groups on Campus, Certificate of Recognition as part of the cohorts at GMSF (2024–2025)</li>
-          <li>OCC-CSC Business Associate Vice Mayor</li>
-        </ul>
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
+
+
+  <!-- =========================================================
+       SCREEN 3: PAUL ZARAGOZA - PROFILE
+       ========================================================= -->
+  <section id="paul-profile" class="screen screen-fixed">
+    <button class="nav-back-btn" onclick="navigateTo('home')" aria-label="Go Back">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+    </button>
+
+    <div class="brand-logo-wrap">
+      <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
+    </div>
+
+    <div class="profile-main-content">
+      <div class="profile-avatar-frame">
+        <img src="paul-photo.png" alt="Paul Zaragoza" />
       </div>
+      <h2 class="profile-full-name">Paul Zaragoza</h2>
+      <p class="profile-office-title">Vice President</p>
 
-      <!-- Seminars -->
-      <div class="profile-card">
-        <h3 class="card-heading">Seminars and Trainings</h3>
-        <ul class="card-list">
-          <li>Intermediate and Beginner Student Guide — Public Administration Deep Dive Training Series 6, Area 3: Student Club 2025–2026</li>
-          <li>OCC-CSC National Committee on Academic and Department at the CCS Plum Briefing 2024</li>
-          <li>Student Council Meeting Camp 2026</li>
-          <li>Students Meeting: Strategies, Leadership and Crisis Management — Empowering Your College Students' Growth at Ateneo 2026</li>
-          <li>MAGSLONG: Pushing Through Youth Leadership and Responsive Governance 2025</li>
-        </ul>
+      <div class="profile-actions-row">
+        <button class="pill-action-btn" onclick="navigateTo('paul-platform')">Platforms</button>
+        <button class="pill-action-btn" onclick="navigateTo('paul-creds')">Credentials</button>
       </div>
+    </div>
 
-      <!-- Education -->
-      <div class="profile-card">
-        <h3 class="card-heading">Educational Background</h3>
-        <ul class="card-list">
-          <li>Bachelor of Science in Information Technology, Western Mindanao State University, Normal Road, Bulawan, Zamboanga City — August 2023 to Current</li>
-          <li>Senior High School — Science and Technology (2021–2024)</li>
-          <li>Taytay-Tawi Local School of Fisheries — Junior High School — With Honors (Tawi-Tawi, Bongao)</li>
-          <li>Zamboanga City High School (Honors) — Junior High</li>
-          <li>Zamboanga Elementary School — Lower High School</li>
-        </ul>
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
+
+
+  <!-- =========================================================
+       SCREEN 4: SADRIEMAR SALI - CREDENTIALS
+       ========================================================= -->
+  <section id="sadriemar-creds" class="screen screen-scrollable">
+    <button class="nav-back-btn" onclick="navigateTo('sadriemar-profile')" aria-label="Go Back">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+    </button>
+
+    <div class="detail-header">
+      <div class="brand-logo-wrap">
+        <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
       </div>
+      <h2 class="detail-candidate-name">Sadriemar Sali</h2>
+      <p class="detail-candidate-role">President</p>
+    </div>
 
-      <!-- Leadership -->
-      <div class="profile-card">
-        <h3 class="card-heading">Leadership Roles</h3>
-        <ul class="card-list">
-          <li>Senior College Senator on the 12th Congress (sitting)</li>
-          <li>College of Computing Studies – CCS College Student Council ACT Representative (2023–2026)</li>
-          <li>ACT Representative Vice Chair (2023–2024)</li>
-          <li>Philippine Science Information Technology Students ACT Representative (2023–2024)</li>
-          <li>Google Developer Groups on Campus, Tech Lead — Main (2025–2026)</li>
-          <li>Google Developer Design on Campus, Community Manager/Ambassador (2025–2026)</li>
-          <li>ACT 1st & 2nd Class Assistant (2022–2024)</li>
-        </ul>
+    <div class="creds-block">
+      <h3 class="creds-block-title">Authored Bills and Resolutions</h3>
+      <div class="creds-item">Senate Bill No. 003 ACT TO ESTABLISH EFFECTIVE STUDENT REPRESENTATION THROUGH PERFORMANCE STANDARD AND ACCOUNTABILITY FOR THE WESTERN MINDANAO STATE UNIVERSITY STUDENT COUNCIL (Also Know as an act to Require all College Senators and Councilors to author one bill and requiring all College Mayor and Vice Mayor to Submit semestral accomplishment and financial Report) (Still Pending)</div>
+      <div class="creds-item">Senate Resolution No. 006 Resolution Directing the SENATE COMMITTEE ON BUDGET AND FINANCE, STUDENT ORGANIZATION, ACCOUNTABILITY OF PUBLIC OFFICERS AND INVESTIGATION AND WAYS AND MEANS, to conduct and inquiry, in aid of legislation, into Department/Society Organization, reviewing the basis of their fund collection and comprehensively reviewing their financial reports for the first semester of the academic year (2024-2025)</div>
+      <div class="creds-item">Co-Authored Local Government Code CPADS - CSC</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Awards</h3>
+      <div class="creds-item">WMSU USC SENATE 11TH CONGRESS SPECIAL AWARD 2023-2024</div>
+      <div class="creds-item">WMSU USC SENATE 11TH CONGRESS SPECIAL AWARD 2024-2025</div>
+      <div class="creds-item">Volunteer (Senate President) WMSU USC Executive and Legislative Visit to ESU Campus 2024-2025</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Seminars and Trainings</h3>
+      <div class="creds-item">ESTUDYANTE COUNCIL MEETING TEAM BUILDING: Down the Leaders Road with a theme: 'Bridging the Gaps and Unlocking Possibilities through Camaraderie and Discovery of Potentials.</div>
+      <div class="creds-item">HIV/AIDS Awareness Forum titled: TAKE THE RIGHTS PATH: MY HEALTH conducted by the Gender Research and Resource Center and Nursing Gender Club. 2024</div>
+      <div class="creds-item">SAFE SPACES FOR STUDENT COUNCIL OFFICERS of the 18-Day Campaign Against Violence Against Women with the theme "UNITED for a VAW-FREE Philippines" Conducted by GRRC And WMSU GAI. 2024</div>
+      <div class="creds-item">PAGSULONG: Shaping Through Youth Leadership and Responsive Governance. 2024</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Educational Background</h3>
+      <div class="creds-item">Bachelor of Public Administration, Western Mindanao State University, Normal Road, Baliwasan, Zamboanga City (August 2023 – Current)</div>
+      <div class="creds-item">Mahardika Institute of Technology Inc. - (Senior High School – With Honors)</div>
+      <div class="creds-item">Tawi-Tawi School of Fisheries - (Junior High School – With Honors), Tawi-Tawi, Bongao</div>
+      <div class="creds-item">Salamat Elementary School, Tawi-Tawi, Bongao</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Leadership Roles</h3>
+      <div class="creds-item">Officer-In-Charge (OIC) Vice President, WMSU-USC (2025)</div>
+      <div class="creds-item">Senate 11th Congress - Senate President, WMSU-USC (2024-2025)</div>
+      <div class="creds-item">Senate 10th Congress - Officer-In-Charge Minority Floor Leader, WMSU-USC (2024)</div>
+      <div class="creds-item">Assistant Minority Floor Leader, Senate 10th Congress, WMSU-USC (2023-2024)</div>
+      <div class="creds-item">Chairperson, Senate Committee on Education, WMSU-USC (2023-2024)</div>
+      <div class="creds-item">Chairperson, Senate Committee on Local Government, WMSU-USC (2024-2025)</div>
+      <div class="creds-item">Senator, College Students Council, WMSU-CPADS (2024-2025)</div>
+      <div class="creds-item">Pioneering Senator, College Students Council, WMSU-CPADS (2023-2024)</div>
+      <div class="creds-item">Pioneering Project Manager, JPAAI, WMSU-CPADS (2023)</div>
+      <div class="creds-item">President, Union of Talented and Organized Leaders Organization (UTOL) (2022-2023)</div>
+      <div class="creds-item">Vice President External, Science, Technology, Engineering, and Mathematics Students Association (STEMSA) (2022-2023)</div>
+      <div class="creds-item">Vice President, Science, Technology, Engineering, and Mathematics Students Association (STEMSA) (2021-2022)</div>
+      <div class="creds-item">Class President, 12 STEM - Avogadro (2023)</div>
+      <div class="creds-item">Class President, 11 STEM - Hawking (2022)</div>
+    </div>
+
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
+
+
+  <!-- =========================================================
+       SCREEN 5: PAUL ZARAGOZA - CREDENTIALS
+       ========================================================= -->
+  <section id="paul-creds" class="screen screen-scrollable">
+    <button class="nav-back-btn" onclick="navigateTo('paul-profile')" aria-label="Go Back">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+    </button>
+
+    <div class="detail-header">
+      <div class="brand-logo-wrap">
+        <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
       </div>
+      <h2 class="detail-candidate-name">Paul Zaragoza</h2>
+      <p class="detail-candidate-role">Vice President</p>
+    </div>
 
-      <div class="section-footer">
-        <p class="footer-tagline">Unity. Service. Performance.</p>
-        <div class="footer-usp">
-          <img src="usp-logo.jpg" alt="USP" />
-          United Students Party · WMSU
-        </div>
+    <div class="creds-block">
+      <h3 class="creds-block-title">Authored Bills and Resolutions</h3>
+      <div class="creds-item">Senate Bill No. 001: A RESOLUTION RESPECTFULLY REQUESTING THE UNIVERSITY ADMINISTRATION TO IMMEDIATELY IMPLEMENT STRICT CAMPUS SECURITY PROTOCOLS AND EMERGENCY PREPAREDNESS PROGRAMS WITHIN WESTERN MINDANAO STATE UNIVERSITY (WMSU) PREMISES IN LIGHT OF RECENT ACTS OF OUTSIDE VIOLENCE. (2024)</div>
+      <div class="creds-item">Authored the "ACT COUNCILOR BILL": AN ACT ESTABLISHING A RECOGNIZED REPRESENTATIVE FOR THE ASSOCIATE IN COMPUTER TECHNOLOGY (ACT) PROGRAM UNDER THE COLLEGE OF COMPUTING STUDIES, THEREBY ENSURING EQUAL AND ADEQUATE REPRESENTATION IN THE COLLEGE OF COMPUTING STUDIES - COLLEGE STUDENT COUNCIL.</div>
+      <div class="creds-item">Authored College Local Governing Code for College of Computing Studies - CSC (pending referendum processes)</div>
+      <div class="creds-item">USC ACT 10: AN ACT CODIFYING THE RULES, GUIDELINES, AND PROCEDURES FOR THE ELECTION OF THE OFFICERS OF THE UNIVERSITY STUDENT COUNCIL or USC ELECTION CODE (still pending)</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Awards</h3>
+      <div class="creds-item">CCS - CSC Certificate of Recognition as ACT REPRESENTATIVE (2023-2024)</div>
+      <div class="creds-item">Philippine Society Information Technology Students, Certificate of Participation as ACT REPRESENTATIVE (2023-2024)</div>
+      <div class="creds-item">CCS - Gender Club, Certificate of Participation as ACT REPRESENTATIVE (2023-2024)</div>
+      <div class="creds-item">Google Developer Groups on Campus, Certificate of Recognition as part of the Core Group of GDSC (2024-2025)</div>
+      <div class="creds-item">CCS - CSC Service Award as Vice Mayor (2025-2026)</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Seminars and Trainings</h3>
+      <div class="creds-item">Camuano and Google Developer Student Clubs PLM explored their Design Thinking Skills in Real-life Solutions entitled, "Bakit Nalulubog Mo Yung Dil? Moh", GDSC/GDSC - 2024</div>
+      <div class="creds-item">HERSTORIES FOR WOMEN IN TECHNOLOGY, Gender Club - CCS 2024</div>
+      <div class="creds-item">GCT General Assembly 2025</div>
+      <div class="creds-item">CCS - CSC Executive Committee and Organizer of the CSC Team Building 2024</div>
+      <div class="creds-item">ESTUDYANTE COUNCIL MEETING CAMP 2025</div>
+      <div class="creds-item">ESTUDYANTE MEETING: Strategic Leadership and Crisis Management: Steering Your College Towards Growth and Resilience. 2026</div>
+      <div class="creds-item">PAGSULONG: Shaping Through Youth Leadership and Responsive Governance. 2024</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Educational Background</h3>
+      <div class="creds-item">Bachelor of Science in Information Technology, Western Mindanao State University, Normal, Tetuan, Baliwasan, Zamboanga City. (2023 – Current)</div>
+      <div class="creds-item">Associate in Computer Technology - Networking, Western Mindanao State University, Normal, Tetuan, Baliwasan, Zamboanga City. (2023 - 2024)</div>
+      <div class="creds-item">Claret School of Zamboanga City, Senior High School. (2021-2023)</div>
+      <div class="creds-item">Zamboanga City High School (Main), Junior High School. (2017-2021)</div>
+      <div class="creds-item">Putik Central School, Zamboanga City, Elementary School (2011-2017)</div>
+    </div>
+
+    <div class="creds-block">
+      <h3 class="creds-block-title">Leadership Roles (College Level)</h3>
+      <div class="creds-item">Interim College Senator of the 12th Congress (2026)</div>
+      <div class="creds-item">College of Computing Studies - College Student Council Vice Mayor (2025 - 2026)</div>
+      <div class="creds-item">College of Computing Studies - College Student Council (CSC) IT - Councilor (2025)</div>
+      <div class="creds-item">College of Computing Studies - College Student Council ACT REPRESENTATIVE (2023 - 2025)</div>
+      <div class="creds-item">Gender Club - CCS, ACT REPRESENTATIVE (2023 - 2024)</div>
+      <div class="creds-item">Philippine Society Information Technology Students, ACT REPRESENTATIVE (2023 - 2024)</div>
+      <div class="creds-item">Google Developer Groups on Campus, Technical Team (2023 - 2024)</div>
+      <div class="creds-item">Google Developer Groups on Campus, Community Development Officer (2024 - 2025)</div>
+      <div class="creds-item">ACT NT 1 &amp; 2 Class President (2023 - 2024)</div>
+    </div>
+
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
+
+
+  <!-- =========================================================
+       SCREEN 6: SADRIEMAR SALI - B.U.G.H.A.O. PLATFORM
+       ========================================================= -->
+  <section id="sadriemar-platform" class="screen screen-scrollable">
+    <button class="nav-back-btn" onclick="navigateTo('sadriemar-profile')" aria-label="Go Back">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+    </button>
+
+    <div class="detail-header">
+      <div class="brand-logo-wrap">
+        <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
       </div>
-    </section>
+      <h2 class="detail-candidate-name">Sadriemar Sali</h2>
+      <p class="detail-candidate-role">President</p>
+      <h3 class="detail-page-title">B.U.G.H.A.O</h3>
+    </div>
 
-    <!-- ============================== -->
-    <!-- SECTION: B.U.G.H.A.O PLATFORM  -->
-    <!-- ============================== -->
-    <section id="platform" class="section">
-      <button class="back-btn" onclick="showSection('home')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M19 12H5M12 5l-7 7 7 7"/>
-        </svg>
-        Back
-      </button>
+    <!-- Letter B -->
+    <div class="platform-item">
+      <div class="platform-letter-head">B</div>
+      <div class="platform-letter-title">Bagong Boses, Tugon, at Aksyon</div>
+      <div class="platform-letter-desc">Isang bukas at agarang sistema ng pagdinig sa mga hinaing at suhestiyon ng bawat estudyante. Titiyakin nating may konkretong aksyon ang konseho sa pamamagitan ng direktang konsultasyon, feedback channels, at regular na pakikipag-ugnayan sa pamunuan ng unibersidad upang tugunan ang mga pangunahing isyu tulad ng pasilidad, seguridad, at kapakanan ng mag-aaral.</div>
+    </div>
 
-      <!-- BUGHAO Hero Banner -->
-      <div class="bughao-hero">
-        <div class="bughao-title">B.U.G.H.A.O</div>
-        <p class="bughao-subtitle">A Proposed Student Governance Program for the University Student Senate</p>
-        <p class="bughao-desc">
-          WMSU BUGHAO is a proposed centralized digital platform designed to strengthen student governance by providing a system to coordinate between the Main Campus and External Student Units (Local/USC), ensuring student leadership, providing accessible student resources, and maintaining transparency in university-wide student governance.
-        </p>
+    <!-- Letter U -->
+    <div class="platform-item">
+      <div class="platform-letter-head">U</div>
+      <div class="platform-letter-title">Unified Student Council Financial System</div>
+      <div class="platform-letter-desc">Pagsasaayos at pagsasama-sama ng sistema ng pananalapi ng konseho para sa mas maayos at tapat na paggamit ng pondo. Titiyakin ang regular na paglalabas ng financial statements, transparent na liquidation ng bawat proyekto, at patas na alokasyon para sa mga inisyatibo na direktang kapaki-pakinabang sa buong komunidad ng WMSU.</div>
+    </div>
+
+    <!-- Letter G -->
+    <div class="platform-item">
+      <div class="platform-letter-head">G</div>
+      <div class="platform-letter-title">Good Governance, Transparency, at Kilos</div>
+      <div class="platform-letter-desc">Pangungunahan ang isang pamumunong tapat, bukas, at may pananagutan sa bawat estudyante. Lahat ng resolusyon, polisiya, at desisyon ng konseho ay ilalatag sa publiko upang matiyak na ang kapangyarihan ay laging nasa kamay ng mga mag-aaral at para sa kanilang kapakanan.</div>
+    </div>
+
+    <!-- Letter H -->
+    <div class="platform-item">
+      <div class="platform-letter-head">H</div>
+      <div class="platform-letter-title">Hinahangad na Pagbabago</div>
+      <div class="platform-letter-desc">Pagtataguyod ng mga makabuluhang reporma sa loob ng unibersidad na tumutugon sa tunay na pangangailangan ng bawat kolehiyo at External Studies Units (ESUs). Layunin nating gawing mas makatarungan, ligtas, at progresibo ang kapaligiran ng WMSU para sa lahat ng Crimson students.</div>
+    </div>
+
+    <!-- Letter A -->
+    <div class="platform-item">
+      <div class="platform-letter-head">A</div>
+      <div class="platform-letter-title">Abot-Kamay na mga Dokumento at Serbisyong Mag-aaral</div>
+      <div class="platform-letter-desc">Gagawing mas mabilis, malinaw, at accessible ang pagproseso ng mga kailangang dokumento, requirements, at suportang pang-akademiko para sa bawat mag-aaral. Aalisin ang burukrasya at ilalapit ang serbisyo sa pamamagitan ng digital assistance at student-centered help desks.</div>
+    </div>
+
+    <!-- Letter O -->
+    <div class="platform-item">
+      <div class="platform-letter-head">O</div>
+      <div class="platform-letter-title">Opisyal na Gabay at Responsableng Pamumuno</div>
+      <div class="platform-letter-desc">Pagbibigay ng malinaw na direksyon, institutional memory, at gabay sa mga lokal na konseho at student organizations. Sisiguraduhin nating ang pamumuno ay hindi natatapos sa pangako kundi nararamdaman sa bawat sulok ng ating unibersidad.</div>
+    </div>
+
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
+
+
+  <!-- =========================================================
+       SCREEN 7: PAUL ZARAGOZA - B.U.G.H.A.O. PLATFORM
+       ========================================================= -->
+  <section id="paul-platform" class="screen screen-scrollable">
+    <button class="nav-back-btn" onclick="navigateTo('paul-profile')" aria-label="Go Back">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+    </button>
+
+    <div class="detail-header">
+      <div class="brand-logo-wrap">
+        <img class="brand-logo" src="usp-logo.jpg" alt="USP Logo" />
       </div>
+      <h2 class="detail-candidate-name">Paul Zaragoza</h2>
+      <p class="detail-candidate-role">Vice President</p>
+      <h3 class="detail-page-title">B.U.G.H.A.O</h3>
+      <p class="detail-page-subtitle">A Proposed Digital Governance Portal for the University Student Council</p>
+      <p class="detail-page-intro">WMSU BUGHAO is a proposed centralized digital platform designed to strengthen student representation, improve coordination between the Main Campus and External Studies Units (ESUs), recognize student leadership, provide accessible student services, and institutionalize transparency and accountability within student governance.<br /><br />The platform is guided by B.U.G.H.A.O., with each letter representing a core functionality of the system.</p>
+    </div>
 
-      <!-- B -->
-      <div class="bughao-letter-card">
-        <div class="bughao-letter-header">
-          <div class="bughao-letter-badge">B</div>
-          <div class="bughao-letter-label">
-            Bloated Concerns and Representation
-            <span>Student Voice</span>
-          </div>
-        </div>
-        <p class="bughao-letter-text">
-          This letter provides students with a formal digital avenue to address, document, and prioritize student concerns, allowing community input in key decisions and ensuring that diverse perspectives are considered. All channels, automated or otherwise, are monitored for updates.
-        </p>
-      </div>
+    <!-- Portal UI Mockup Previews from Figma -->
+    <div class="portal-previews-wrap">
+      <img class="portal-preview-img" src="bughao-preview1.png" alt="WMSU Portal Mockup Login" />
+      <img class="portal-preview-img" src="bughao-preview2.png" alt="WMSU Portal Mockup Dashboard" />
+    </div>
 
-      <!-- U -->
-      <div class="bughao-letter-card">
-        <div class="bughao-letter-header">
-          <div class="bughao-letter-badge">U</div>
-          <div class="bughao-letter-label">
-            Uniform Campus and Ground Coordination
-            <span>Campus-Wide Sync</span>
-          </div>
-        </div>
-        <p class="bughao-letter-text">
-          Addresses the structured communication and coordination channels between the Main Campus, External Student Units, the USC, and Local College Student Councils. It will help facilitate the dissemination of announcements, coordination of deliverables, and coordination of university-wide programs across campuses.
-        </p>
-      </div>
+    <!-- Letter B -->
+    <div class="platform-item">
+      <div class="platform-letter-head">B - Boses</div>
+      <div class="platform-letter-title">Student Concerns and Representation</div>
+      <div class="platform-letter-desc">Provides students with a formal digital avenue to submit concerns, complaints, processes, recommendations, and other matters directly to the University Student Council (USC). It aims to strengthen student participation and ensure that student concerns can be documented, referred to the appropriate offices, and monitored for updates.</div>
+    </div>
 
-      <!-- G -->
-      <div class="bughao-letter-card">
-        <div class="bughao-letter-header">
-          <div class="bughao-letter-badge">G</div>
-          <div class="bughao-letter-label">
-            Grievance, Accomplishments & Reports
-            <span>Transparency</span>
-          </div>
-        </div>
-        <p class="bughao-letter-text">
-          Provides a centralized space for monitoring accomplishments, program implementations, and student engagements from each Local College Council to the USC. It allows students to track their activities, ongoing initiatives, completed projects, and services delivered by their representatives.
-        </p>
-      </div>
+    <!-- Letter U -->
+    <div class="platform-item">
+      <div class="platform-letter-head">U - Ugnayan</div>
+      <div class="platform-letter-title">Campus and Council Coordination</div>
+      <div class="platform-letter-desc">Establishes a structured communication and coordination channel between the Main Campus, External Studies Units, the USC, and Local College Student Councils (CSCs). It aims to facilitate the proper routing of concerns, dissemination of information, and coordination of university-wide programs across campuses.</div>
+    </div>
 
-      <!-- H -->
-      <div class="bughao-letter-card">
-        <div class="bughao-letter-header">
-          <div class="bughao-letter-badge">H</div>
-          <div class="bughao-letter-label">
-            Honoring Student Council Performance
-            <span>Recognition</span>
-          </div>
-        </div>
-        <p class="bughao-letter-text">
-          This section focuses on monitoring performance, student congress records of conferences, positions, and program implementations, student engagements, and administration, Senate Committee records — properly tracking through the mechanism of financial reports and ensuring accountability.
-        </p>
-      </div>
+    <!-- Letter G -->
+    <div class="platform-item">
+      <div class="platform-letter-head">G - Gawa</div>
+      <div class="platform-letter-title">Accomplishments, Announcements, and Implemented Projects or Programs</div>
+      <div class="platform-letter-desc">Provides a centralized space for publishing announcements, activities, projects, and accomplishments from Local CSCs to the USC. It allows students to stay informed about ongoing initiatives, completed projects, and services delivered by their student leaders.</div>
+    </div>
 
-      <!-- A -->
-      <div class="bughao-letter-card">
-        <div class="bughao-letter-header">
-          <div class="bughao-letter-badge">A</div>
-          <div class="bughao-letter-label">
-            Accessible Student Services and Information
-            <span>Student Support</span>
-          </div>
-        </div>
-        <p class="bughao-letter-text">
-          Serves as a centralized system to constantly provide and disseminate information including guidance for requesting university documents, track academic requirements, deadlines, and updates on institutional matters. It will serve as a foundation for building an informed community for all students.
-        </p>
-      </div>
+    <!-- Letter H -->
+    <div class="platform-item">
+      <div class="platform-letter-head">H - Husay</div>
+      <div class="platform-letter-title">Student Council Performance and Recognition</div>
+      <div class="platform-letter-desc">Introduces a recognition mechanism for outstanding student councils based on established performance indicators, such as program implementation, student engagement, transparency, responsiveness, and service delivery. It aims to encourage excellence, innovation, accountability, most especially to compliance with the requirements of financial report among local CSCs.</div>
+    </div>
 
-      <!-- O -->
-      <div class="bughao-letter-card">
-        <div class="bughao-letter-header">
-          <div class="bughao-letter-badge">O</div>
-          <div class="bughao-letter-label">
-            Overseeing Bodies and Public Records
-            <span>Accountability</span>
-          </div>
-        </div>
-        <p class="bughao-letter-text">
-          Promotes transparency and accountability by providing an organized system to safely document the directives, executive orders, and resolutions of recognized university bodies. This includes regulations, legislative records, and protocols documenting the work of key governing organizations.
-        </p>
-      </div>
+    <!-- Letter A -->
+    <div class="platform-item">
+      <div class="platform-letter-head">A - Aksis</div>
+      <div class="platform-letter-title">Accessible Student Services and Information</div>
+      <div class="platform-letter-desc">Serves as a centralized gateway to university services and essential student information, including guidance on requesting university documents such as Certificates of Registration (COR), identification cards, scholarship-related requirements, and other academic or administrative documents. It aims to make university services easier to navigate, particularly for students from External Studies Units.</div>
+    </div>
 
-      <div class="section-footer">
-        <p class="footer-tagline">Unity. Service. Performance.</p>
-        <div class="footer-usp">
-          <img src="usp-logo.jpg" alt="USP" />
-          United Students Party · WMSU
-        </div>
-      </div>
-    </section>
+    <!-- Letter O -->
+    <div class="platform-item">
+      <div class="platform-letter-head">O - Oportunidad / Bukas</div>
+      <div class="platform-letter-title">Open Governance and Public Records</div>
+      <div class="platform-letter-desc">Promotes transparency and accountability by providing organized access to publicly discussable governance records, including USC and CSC financial reports, executive orders, Senate bills and resolutions, legislative records, and archives documenting the work of current and former student leaders.</div>
+    </div>
 
-    <!-- ============================== -->
-    <!-- SECTION: QR CODE               -->
-    <!-- ============================== -->
-    <section id="qr" class="section">
-      <button class="back-btn" onclick="showSection('home')">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M19 12H5M12 5l-7 7 7 7"/>
-        </svg>
-        Back
-      </button>
+    <p class="footer-tagline">Unity. Service. Performance</p>
+  </section>
 
-      <div class="qr-section-inner">
-        <h2 class="qr-section-title">📱 Scan to Visit</h2>
-        <p class="qr-section-sub">
-          Share this QR code so anyone can access the USP campaign website instantly.
-        </p>
+</div><!-- end app-viewport -->
 
-        <div class="qr-container">
-          <div id="qrcode"></div>
-        </div>
 
-        <div class="qr-url-box" id="qr-url-display">
-          Generating QR for current page URL...
-        </div>
+<!-- =========================================================
+     FLOATING QR CODE BUTTON & MODAL
+     ========================================================= -->
+<button class="floating-qr-btn" onclick="openQRModal()" aria-label="Show QR Code" title="Share via QR">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+    <rect x="3" y="3" width="7" height="7"></rect>
+    <rect x="14" y="3" width="7" height="7"></rect>
+    <rect x="3" y="14" width="7" height="7"></rect>
+    <rect x="14" y="14" width="3" height="3"></rect>
+    <rect x="18" y="18" width="3" height="3"></rect>
+    <rect x="18" y="14" width="3" height="3"></rect>
+    <rect x="14" y="18" width="3" height="3"></rect>
+  </svg>
+</button>
 
-        <div class="qr-instructions">
-          <strong>📖 How to use:</strong>
-          Open your phone's camera or a QR scanner app, point it at the code above, and tap the link that appears to open this website.
-          <br><br>
-          <strong>🔗 To share online:</strong>
-          Screenshot this page and share the QR code on social media or print it for events.
-        </div>
-      </div>
+<div class="qr-modal" id="qrModal" onclick="closeQRModal(event)">
+  <div class="qr-card">
+    <button class="qr-close-btn" onclick="closeQRModal()" aria-label="Close">&times;</button>
+    <h3 class="qr-title">Scan to Visit</h3>
+    <p class="qr-subtitle">Point your phone camera to open the official USP campaign site</p>
+    <div id="qrcode-container"></div>
+    <a href="https://Sushitr45h.github.io/USPQR" target="_blank" class="qr-link-text">https://Sushitr45h.github.io/USPQR</a>
+  </div>
+</div>
 
-      <div class="section-footer">
-        <p class="footer-tagline">Unity. Service. Performance.</p>
-        <div class="footer-usp">
-          <img src="usp-logo.jpg" alt="USP" />
-          United Students Party · WMSU
-        </div>
-      </div>
-    </section>
-
-  </div><!-- end page-wrapper -->
-
-  <!-- QR Code Library -->
-  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
