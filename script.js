@@ -2,7 +2,7 @@
 // USP WMSU Campaign Website - Interactive Logic & QR
 // =========================================================
 
-const LIVE_URL = 'https://salizaragoza.com';
+const LIVE_URL = 'https://Sushitr45h.github.io/USPQR';
 let currentScreenId = 'home';
 let qrRendered = false;
 
