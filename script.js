@@ -96,7 +96,7 @@ function openQRModal() {
             } else {
               // Fallback to static image
               const img = document.createElement('img');
-              img.src = 'usp-campaign-qr.png';
+              img.src = 'usp-campaign-qr.jpg';
               img.alt = 'USP WMSU QR Code';
               img.style.width = '200px';
               img.style.height = '200px';
@@ -110,7 +110,7 @@ function openQRModal() {
     } else {
       // QRCode library not loaded, use static image
       const img = document.createElement('img');
-      img.src = 'usp-campaign-qr.png';
+      img.src = 'usp-campaign-qr.jpg';
       img.alt = 'USP WMSU QR Code';
       img.style.width = '200px';
       img.style.height = '200px';
