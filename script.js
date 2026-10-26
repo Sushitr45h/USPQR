@@ -64,38 +64,60 @@ function openQRModal() {
   if (!modal) return;
   modal.classList.add('active');
 
-  if (!qrRendered && typeof QRCode !== 'undefined') {
+  if (!qrRendered) {
     const container = document.getElementById('qrcode-container');
     container.innerHTML = '';
 
-    QRCode.toCanvas(LIVE_URL, {
-      width: 200,
-      margin: 1,
-      color: {
-        dark: '#0e3158',
-        light: '#ffffff'
-      },
-      errorCorrectionLevel: 'H'
-    }, function (err, canvas) {
-      if (!err && canvas) {
-        canvas.style.borderRadius = '8px';
-        container.appendChild(canvas);
-        qrRendered = true;
-      } else {
-        // Fallback to data URL
-        QRCode.toDataURL(LIVE_URL, { width: 200, margin: 1 }, (err2, url) => {
-          if (!err2) {
-            const img = document.createElement('img');
-            img.src = url;
-            img.alt = 'USP WMSU QR Code';
-            img.style.width = '200px';
-            img.style.height = '200px';
-            container.appendChild(img);
-            qrRendered = true;
-          }
-        });
-      }
-    });
+    if (typeof QRCode !== 'undefined') {
+      QRCode.toCanvas(LIVE_URL, {
+        width: 200,
+        margin: 1,
+        color: {
+          dark: '#0e3158',
+          light: '#ffffff'
+        },
+        errorCorrectionLevel: 'H'
+      }, function (err, canvas) {
+        if (!err && canvas) {
+          canvas.style.borderRadius = '8px';
+          container.appendChild(canvas);
+          qrRendered = true;
+        } else {
+          // Fallback to data URL
+          QRCode.toDataURL(LIVE_URL, { width: 200, margin: 1 }, (err2, url) => {
+            if (!err2) {
+              const img = document.createElement('img');
+              img.src = url;
+              img.alt = 'USP WMSU QR Code';
+              img.style.width = '200px';
+              img.style.height = '200px';
+              container.appendChild(img);
+              qrRendered = true;
+            } else {
+              // Fallback to static image
+              const img = document.createElement('img');
+              img.src = 'usp-campaign-qr.png';
+              img.alt = 'USP WMSU QR Code';
+              img.style.width = '200px';
+              img.style.height = '200px';
+              img.style.borderRadius = '8px';
+              container.appendChild(img);
+              qrRendered = true;
+            }
+          });
+        }
+      });
+    } else {
+      // QRCode library not loaded, use static image
+      const img = document.createElement('img');
+      img.src = 'usp-campaign-qr.png';
+      img.alt = 'USP WMSU QR Code';
+      img.style.width = '200px';
+      img.style.height = '200px';
+      img.style.borderRadius = '8px';
+      container.appendChild(img);
+      qrRendered = true;
+    }
   }
 }
 
